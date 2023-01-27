@@ -1,14 +1,144 @@
+/* -------------------------general part------------------------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
 body {
+    background-color: rgb(242, 246, 248);
+}
+
+
+/* -------------------------header part------------------------- */
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;    
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.header .header-left, .header .header-right {
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+.header-left .form-icon img {
+    height: 40px;
+}
+.header-left .move-to-folder img {
+    height: 20px;
+}
+.header-left .star img {
+    height: 30px;
+}
+
+.header-left, .header-right ul {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+   
+}
+
+.header-right ul li img {
+    height: 30px;
+    gap: 20px;
+}
+
+.header-right ul {
+    list-style-type: none;  
+}
+
+
+
+/* -------------------------q-n-r part------------------------- */
+.q-n-r {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 10px;
+    gap: 15px;
+    background-color: white;
+    font-size: 20px;
+    margin-bottom: 15px;
 }
 
-.div-box {
+
+
+
+/* -------------------------Questions part------------------------- */
+/* ---------------------------------------------------------------- */
+
+/* -------------------------untitled-form part--------------------- */
+
+
+.questions-box {
+    width: 55%;
+    margin-top: 10px;
+    padding-top: 20px;
+    background-color: white;
+    margin: auto;
+    padding: 30px 20px; 
+    padding-top: 0px;  
+    border-radius: 10px;  
+    box-shadow: 0px 0px 1px ;
+   
+}
+.questions-box .blue-line {
+    background-color: blue;
+    margin-left: -20px;
+    margin-right: -20px;
+    height: 10px;
+    font-size: 6px;
+    color: blue;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+}
+
+.untitled-form h1 {
     margin-top: 15px;
-
+    margin-bottom: 20px;
+}
+.untitled-form p {
+    margin-top: 15px;
+    color: gray;
+   
 }
 
-.btn-div {
-    text-align: center;
-}
+ /* ---------------Functionality Button Part-------------  */
+
+ .functionaity-buttons ul li span {
+    font-size: 24px;
+    padding: 10px;
+ }
+
+ .functionaity-buttons ul {
+    list-style-type: none;
+ }
+
+ .functionaity-buttons ul {
+    background-color: white;
+    width: fit-content;
+    border-radius: 10px;
+    box-shadow: 0px 0px 1px;
+    padding-top: 5px;
+    padding-bottom: 5px;  
+ }
+
+ .question-main-page {
+    /* border: 2px solid blue; */
+    position: relative;  
+ }
+
+ .functionaity-buttons {
+    width: 20%;
+    position: absolute;
+    right: 20px;
+    top: 0;
+ }
+
+
+
+
