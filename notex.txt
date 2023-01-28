@@ -1,1 +1,70 @@
 https://aircampushack.onrender.com/forms/login
+
+Google Forms, Microsoft forms API, JOTforms APIs:- 
+User sign and login
+Post:- https://aircampushack.onrender.com/forms/login
+Request parameter :- 
+{
+	email: ‘sample@gmail.com’,
+	pass: ‘xyz@123’,
+}
+
+
+Post:- https://aircampushack.onrender.com/forms/signin
+Request parameter :- 
+{
+	email: ‘sample@gmail.com’,
+	password: ‘xyz@123’,
+}
+
+Data send api.
+Post:- https://aircampushack.onrender.com/forms/senddata
+Request parameter :- 
+{
+	formId: ‘sample@gmail.com’,
+	data: ‘All form data in String format’,
+}
+
+All data API.
+Post:- https://aircampushack.onrender.com/forms/getalldata
+Request parameter :- 
+{
+	formId: ‘sample@gmail.com’,
+}
+
+
+********************************************************************************************************
+
+
+
+
+let options = {
+    body: JSON.stringify({
+      email: 'abcd@gmail.com',
+      pass: 'Vinay@123'
+    }),
+    headers: {
+      "content-type": "application/json",
+    },
+    method: "POST",
+  };
+
+  fetch("https://aircampushack.onrender.com/forms/signin", options)
+    .then((resolve) => {
+      return resolve.json();
+    })
+    .then((data) => {
+      console.log(data);
+    //   localStorage.setItem("loggedInUser", JSON.stringify(data));
+    //   window.location.href = "index.html";
+    })
+    .catch((error) => {
+      // alert(error);
+      console.log(err)
+    //   mobileNumAlert.innerText = "This account does not exist";
+    //   alertDiv.style.cssText = "transition: 1s; background-color: #FF1E1E ";
+    //   mobileNumAlert.innerText = "Your username and/ or password do not match";
+      // setTimeout(() => {
+      //   alertDiv.style.cssText = "transition:1s; display: none";
+      // }, 2000);
+    });
