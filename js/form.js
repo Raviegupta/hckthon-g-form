@@ -156,7 +156,7 @@ const shareApi = (questionsData) => {
 
   let options = {
     body: JSON.stringify({
-      data: JSON.stringify(questionsData),
+      data: questionsData,
       formId: localFormId,
     }),
     headers: {
