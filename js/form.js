@@ -5,7 +5,9 @@ const quesAnsBox = document.querySelector(".question-input");
 const ulQuestionMainPage = document.querySelector(".ul-of-question-main-page");
 const plusQuestionBox = document.querySelector(".add");
 const deleteQuesAnsBox = document.querySelector(".delete-btn");
-// const questionInputs = document.querySelector('.question-input')
+// const questionInputs = document.querySelector('.question-input');
+
+// const responsesPage = document.querySelector('.responses');
 
 const linkGenSendBtn = document.querySelector(".link-generator-send-button");
 
@@ -79,6 +81,11 @@ plusQuestionBox.addEventListener("click", () => {
 
 // questionMainPage.appendChild(quesAnsBox);
 
+
+// responsesPage.addEventListener(click, () => {
+  
+// })
+
 // ************* Functions ****************
 
 const deleteItem = (e) => {
@@ -148,8 +155,8 @@ const shareApi = (questionsData) => {
   let localFormId = localStorage.getItem("formId");
 
   let options = {
-    body: JSON.stringify({
-      data: questionsData,
+    body: ({
+      data: JSON.stringify(questionsData),
       formId: localFormId,
     }),
     headers: {
