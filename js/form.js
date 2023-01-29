@@ -155,7 +155,7 @@ const shareApi = (questionsData) => {
   let localFormId = localStorage.getItem("formId");
 
   let options = {
-    body: ({
+    body: JSON.stringify({
       data: JSON.stringify(questionsData),
       formId: localFormId,
     }),
