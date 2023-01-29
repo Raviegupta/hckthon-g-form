@@ -6,9 +6,6 @@ const emailId = document.querySelector(".email-id");
 const password = document.querySelector(".password");
 const signUpBtn = document.querySelector(".sign-up-btn");
 const id = localStorage.getItem('formId')
-if(id) {
-    window.location.href = "../index.html"
-}
 
 signUpBtn.addEventListener("click", () => {
   // validation
