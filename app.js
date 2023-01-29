@@ -1,9 +1,14 @@
+// import { shareApi } from "./apiManager/api.js";
+
 // ********** SELECT ITEMS & VARIABLES **********
 const quesAnsBox = document.querySelector(".question-input");
 const ulQuestionMainPage = document.querySelector(".ul-of-question-main-page");
 const plusQuestionBox = document.querySelector(".add");
 const deleteQuesAnsBox = document.querySelector(".delete-btn");
 // const questionInputs = document.querySelector('.question-input')
+
+const linkGenSendBtn = document.querySelector(".link-generator-send-button");
+
 let data = [];
 
 function getItemWithId(id) {
@@ -124,4 +129,40 @@ const getIndex = (id) => {
 const getItemById = (id) => {
   let index = getIndex(id);
   return data[index];
+};
+
+// ****************************************************************************************
+
+linkGenSendBtn.addEventListener("click", () => {
+  if (data.length > 0) {
+    shareApi(data).then((res) => {
+      console.log(res);
+    });
+  }
+});
+
+const shareApi = (questionsData) => {
+  const baseUrl = "https://aircampushack.onrender.com/forms/";
+
+  let url = baseUrl + "senddata";
+  let localFormId = localStorage.getItem("formId");
+
+  let options = {
+    body: JSON.stringify({
+      data: questionsData,
+      formId: localFormId,
+    }),
+    headers: {
+      "content-type": "application/json",
+    },
+    method: "POST",
+  };
+
+  let promise = new Promise((resolve, error) => {
+    fetch(url, options)
+      .then((response) => response.json())
+      .then((data) => resolve(data))
+      .catch((err) => error(err));
+  });
+  return promise;
 };
