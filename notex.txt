@@ -68,3 +68,31 @@ let options = {
       //   alertDiv.style.cssText = "transition:1s; display: none";
       // }, 2000);
     });
+
+
+
+***************
+
+data
+: 
+"[[{\"id\":1,\"question\":\"qewvfbgn\",\"answer\":\"\",\"questiontype\":0},{\"id\":2,\"question\":\"sadvfbgn\",\"answer\":\"\",\"questiontype\":0}],\"[{\\\"id\\\":2,\\\"question\\\":\\\"fdsfgfnh \\\",\\\"answer\\\":\\\"\\\",\\\"questiontype\\\":0},{\\\"id\\\":3,\\\"question\\\":\\\"qsacdvbgn\\\",\\\"answer\\\":\\\"\\\",\\\"questiontype\\\":0}]\",\"[{\\\"id\\\":2,\\\"question\\\":\\\"fdsfgfnh \\\",\\\"answer\\\":\\\"\\\",\\\"questiontype\\\":0},{\\\"id\\\":3,\\\"question\\\":\\\"qsacdvbgn\\\",\\\"answer\\\":\\\"\\\",\\\"questiontype\\\":0}]\",\"[{\\\"id\\\":1,\\\"question\\\":\\\"rgefrwds\\\",\\\"answer\\\":\\\"\\\",\\\"questiontype\\\":0},{\\\"id\\\":2,\\\"question\\\":\\\"gbfvdc\\\",\\\"answer\\\":\\\"\\\",\\\"questiontype\\\":0}]\",\"[{\\\"id\\\":1,\\\"question\\\":\\\"wqefgh\\\",\\\"answer\\\":\\\"\\\",\\\"questiontype\\\":0}]\",\"[{\\\"id\\\":1,\\\"question\\\":\\\"asxdcfvg\\\",\\\"answer\\\":\\\"\\\",\\\"questiontype\\\":0},{\\\"id\\\":2,\\\"question\\\":\\\"axscdvbfg\\\",\\\"answer\\\":\\\"\\\",\\\"questiontype\\\":0}]\",\"[{\\\"id\\\":1,\\\"question\\\":\\\"azSX\\\",\\\"answer\\\":\\\"\\\",\\\"questiontype\\\":0},{\\\"id\\\":2,\\\"question\\\":\\\"SAdx\\\",\\\"answer\\\":\\\"\\\",\\\"questiontype\\\":0}]\",\"[{\\\"id\\\":2,\\\"question\\\":\\\"qsxadvf\\\",\\\"answer\\\":\\\"\\\",\\\"questiontype\\\":0}]\",\"[{\\\"id\\\":1,\\\"question\\\":\\\"zAXSCDVF\\\",\\\"answer\\\":\\\"\\\",\\\"questiontype\\\":0},{\\\"id\\\":2,\\\"question\\\":\\\"xascdvZB\\\",\\\"answer\\\":\\\"\\\",\\\"questiontype\\\":0}]\",\"[{\\\"id\\\":2,\\\"question\\\":\\\"fdsa\\\",\\\"answer\\\":\\\"\\\",\\\"questiontype\\\":0}]\",\"[{\\\"id\\\":1,\\\"question\\\":\\\"czc\\\",\\\"answer\\\":\\\"\\\",\\\"questiontype\\\":0}]\",\"[{\\\"id\\\":1,\\\"question\\\":\\\"czc\\\",\\\"answer\\\":\\\"\\\",\\\"questiontype\\\":0}]\",\"[{\\\"id\\\":1,\\\"question\\\":\\\"azsxdvfsb\\\",\\\"answer\\\":\\\"\\\",\\\"questiontype\\\":0}]\",\"[{\\\"id\\\":1,\\\"question\\\":\\\"waht?\\\",\\\"answer\\\":\\\"\\\",\\\"questiontype\\\":0},{\\\"id\\\":2,\\\"question\\\":\\\"Where?\\\",\\\"answer\\\":\\\"\\\",\\\"questiontype\\\":0}]\"]"
+email
+: 
+"63d699a75d4f00587d755ae2"
+
+
+[[{\"id\":1,\"question\":\"what is your Fav color?\",\"answer\":\"\",\"questiontype\":0}],   
+   \"[{\\\"id\\\":1,\\\"question\\\":\\\"What is fav food?\\\",\\\"answer\\\":\\\"\\\",\\\"questiontype\\\":0}]\"]"
+email
+: 
+"63d824594d94e4c5f3ab96dc"
+
+
+"[[{\"id\":1,\"question\":\"what is your Fav color?\",\"answer\":\"\",\"questiontype\":0}],
+\"[{\\\"id\\\":1,\\\"question\\\":\\\"What is fav food?\\\",\\\"answer\\\":\\\"\\\",\\\"questiontype\\\":0}]\",
+\"[{\\\"id\\\":1,\\\"question\\\":\\\"who is your fav cricketer?\\\",\\\"answer\\\":\\\"\\\",\\\"questiontype\\\":0},
+   {\\\"id\\\":2,\\\"question\\\":\\\"your fav actress?\\\",\\\"answer\\\":\\\"\\\",\\\"questiontype\\\":0},
+   {\\\"id\\\":3,\\\"question\\\":\\\"fav city?\\\",\\\"answer\\\":\\\"\\\",\\\"questiontype\\\":0}]\"]"
+email
+: 
+"63d824594d94e4c5f3ab96dc"

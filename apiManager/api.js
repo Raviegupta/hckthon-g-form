@@ -74,3 +74,33 @@ export const loginApi = (email, pass) => {
 //   return promise;
 // };
 
+
+// ----------------------------------------------------------------------------------------------
+
+// https://aircampushack.onrender.com/forms/getalldata
+// getalldata
+
+export const getalldataApi = () => {
+  let url = baseUrl + "getalldata";
+  let localFormId = localStorage.getItem("formId");
+
+  let options = {
+    body: JSON.stringify({
+      formId: localFormId,
+    }),
+    headers: {
+      "content-type": "application/json",
+    },
+    method: "POST",
+  };
+
+  let promise = new Promise((resolve, error) => {
+    fetch(url, options) //api for the get request
+      .then((response) => response.json())
+      .then((data) => resolve(data))
+      .catch((err) => error(err));
+  });
+
+  return promise;
+  };
+
